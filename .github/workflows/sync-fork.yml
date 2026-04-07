@@ -7,6 +7,9 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
     steps:
       - name: Checkout Forked Repository
         uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd
